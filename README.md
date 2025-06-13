@@ -43,22 +43,7 @@ File này bao gồm các thư viện chính sau:
 * `python-dotenv`: Dùng để quản lý các biến môi trường.
 * `flask-cors`: Một extension của Flask để xử lý Cross-Origin Resource Sharing (CORS).
 
-### 3. Cấu hình biến môi trường
-
-Ứng dụng cần một khóa API từ Google để có thể giao tiếp với mô hình Gemini.
-
-1.  Tạo một file mới trong thư mục gốc của dự án và đặt tên là `.env`.
-2.  Mở file `.env` và thêm vào nội dung sau:
-
-    ```
-    GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
-    ```
-
-3.  **Quan trọng:** Thay thế `"YOUR_GOOGLE_API_KEY"` bằng khóa API thực tế của bạn.
-
-File `.gitignore` đã được cấu hình để bỏ qua thư mục `venv/` và bạn cũng nên thêm file `.env` vào đó để tránh việc đưa các thông tin nhạy cảm (như API key) lên git.
-
-### 4. Chạy ứng dụng
+### 3. Chạy ứng dụng
 
 Sau khi đã hoàn tất các bước trên, bạn có thể khởi động máy chủ Flask bằng lệnh:
 
